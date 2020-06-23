@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>CSS Website Layout</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+ 
+.blue {
+    background: black;
+}
+.news {
+    box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
+       width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 1px;
+    -webkit-user-select: none;
+}
+.news span {
+    float: up;
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    top: 1%;
+    box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+    font: 22px 'Raleway', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.text1{
+ box-shadow:none !important;
+    width: 450px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background-color: yellow; 
 }
 
 /* Style the header */
 .header {
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 8px;
   text-align: center;
 }
 
@@ -67,14 +99,18 @@ body {
 <body>
 
 <div class="header">
-  <h1>Header</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
+  <h1>ছাগলনাইয়া নিউজ ২৪/৭</h1>
+  <div class="news blue">
+ <span>মোট আক্রান্ত ১,১৫,৭৮৬ |সুস্থ ৪৬,৭৫৫</span><span class="text1"><marquee>  |ফেনী ৬০৯| | নারায়ণগঞ্জ ৪,৪৯০| | গাজীপুর  ২,৫১১|  | কুমিল্লা  ২,২১৭|  |কক্সবাজার  ১,৬৮৮|  |নোয়াখালী ১,৬৩২| |ময়মনসিংহ ১,২০৪|  |মাদারীপুর ৪৬৮| |দিনাজপুর ৪৫৮|
+|জামালপুর ৪৪০| |মুন্সীগঞ্জ  ১,৬৬১| </marquee></span>
+</div> 
 </div>
 
 <div class="topnav">
+ <a href="#"><i class="fa fa-smile-o fa-spin fa-1x fa-fw"></i></a> 
+  <a href="#"><i class="fa fa-facebook fa-spin fa-1x fa-fw"></i></a> 
   <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="#"><i class="fa fa-user-md"></i></a> 
 </div>
 
 <div class="row">
